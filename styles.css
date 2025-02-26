@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artículo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .articulos {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 20px;
+        }
+        .columna {
+            flex: 1;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .menu {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            background: #333;
+        }
+        .menu li {
+            padding: 10px;
+        }
+        .menu li a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="articulo.html">Artículo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Artículo sobre nuestro producto/servicio</h1>
+        <div class="articulos">
+            <div class="columna">
+                <h2>Título 1</h2>
+                <p>Descripción del primer elemento del artículo.</p>
+            </div>
+            <div class="columna">
+                <h2>Título 2</h2>
+                <p>Descripción del segundo elemento del artículo.</p>
+            </div>
+            <div class="columna">
+                <h2>Título 3</h2>
+                <p>Descripción del tercer elemento del artículo.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+

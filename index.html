@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .carrusel {
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .carrusel img {
+            width: 100%;
+            max-width: 600px;
+            max-height: 400px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .boton {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="articulo.html">Artículo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Bienvenidos a Creaciones Colours Moon</h1>
+        <section>
+            <h2>Amigurumis en Creaciones Colours Moon</h2>
+            <p>En <strong>Creaciones Colours Moon</strong>, nos dedicamos a ofrecer una amplia variedad de amigurumis hechos a mano, cada uno cuidadosamente tejido con materiales de alta calidad. Nuestro objetivo es compartir el encanto de estos muñecos únicos y coloridos con personas que aprecian el arte del crochet. Desde amigurumis para decorar tu hogar hasta regalos personalizados, tenemos algo para cada ocasión.</p>
+            
+            <h2>Explora Nuestra Colección</h2>
+            <p>Te invitamos a explorar nuestra galería y encontrar el amigurumi perfecto para ti. Cada pieza refleja la pasión y dedicación que ponemos en nuestro trabajo. No dudes en contactarnos si tienes alguna idea especial en mente o si deseas hacer un pedido personalizado. ¡Estamos aquí para crear magia con hilo!</p>
+        </section>
+
+        <div class="carrusel">
+            <button class="boton prev" onclick="cambiarImagen(-1)">&#10094;</button>
+            <img id="imagen-carrusel" src="Principal.png" class="active">
+            <button class="boton next" onclick="cambiarImagen(1)">&#10095;</button>
+        </div>
+    </main>
+
+    <script>
+        const imagenes = ["e2f3b9e6-ec73-4a1f-bbab-b2a68b146fa3.png", "Imagen de WhatsApp 2025-02-14 a las 13.45.05_a0cc9993.jpg", "Imagen de WhatsApp 2025-02-14 a las 13.45.13_592c8fbe.jpg", "Imagen de WhatsApp 2025-02-26 a las 15.12.21_0b53b9ba.jpg", "Imagen de WhatsApp 2025-02-26 a las 15.12.21_8054bda2.jpg", "Imagen de WhatsApp 2025-02-26 a las 15.12.22_2d512842.jpg", "Imagen de WhatsApp 2025-02-26 a las 15.12.22_6a8a6950.jpg"];
+        let indice = 0;
+
+        function cambiarImagen(direccion) {
+            indice = (indice + direccion + imagenes.length) % imagenes.length;
+            document.getElementById("imagen-carrusel").src = imagenes[indice];
+        }
+    </script>
+</body>
+</html>
+
+
