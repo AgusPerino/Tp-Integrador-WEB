@@ -5,6 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artículo</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f3f7;
+            color: #4B0082;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #D8A7F3;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #6A0DAD;
+        }
+
+        .articulos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .producto {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .producto:hover {
+            transform: scale(1.05);
+        }
+
+        .producto img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .producto h3 {
+            color: #FF69B4;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .producto p {
+            color: #6A0DAD;
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .precio {
+            font-size: 1.2em;
+            color: #008080;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .btn-comprar {
+            background-color: #FFB6C1;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #4B0082;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-comprar:hover {
+            background-color: #FF69B4;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #D8A7F3;
+            color: white;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,52 +130,61 @@
     </header>
     
     <main>
-        <h1>Artículo sobre nuestro producto</h1>
-        <section>
-            <h2>Artículos sobre Amigurumis asdasd</h2>
-            <p>En esta sección, encontrarás una serie de artículos relacionados con el fascinante mundo de los amigurumis. Ya seas un principiante en el crochet o un experto en la creación de muñecos de hilo, aquí encontrarás consejos útiles, tutoriales y las últimas tendencias sobre cómo mejorar tus habilidades y crear obras de arte únicas.</p>
-
-            <article>
-                <h3>¿Qué son los Amigurumis?</h3>
-                <p>Los <strong>amigurumis</strong> son muñecos tejidos a mano, hechos con hilo o lana, que se originaron en Japón. La palabra "amigurumi" proviene de los términos japoneses "ami" (tejer) y "nuigurumi" (muñeco de felpa). Estos adorables muñecos, que van desde personajes de fantasía hasta animales y objetos, se crean utilizando técnicas de crochet, y cada uno de ellos tiene su propio estilo y personalidad.</p>
+        <h1>Artículo sobre Amigurumis</h1>
+        <section class="articulos">
+            <article class="producto">
+                <img src="Imagen de WhatsApp 2025-02-14 a las 13.45.05_a0cc9993.jpg" alt="Amigurumi 1">
+                <h3>Amigurumi Conejo</h3>
+                <p>Un adorable conejito tejido a crochet, ideal para regalos.</p>
+                <p class="precio">$3000</p>
+                <button class="btn-comprar">Comprar</button>
             </article>
 
-            <article>
-                <h3>El Arte de Tejer Amigurumis</h3>
-                <p>El tejer amigurumis es una forma creativa de expresión y una actividad popular que ha crecido enormemente en los últimos años. El proceso involucra tejer pequeñas piezas que luego se ensamblan para formar el muñeco. Cada amigurumi es único, con detalles como ojos, ropa y accesorios que lo hacen especial. Además, esta técnica permite personalizar y crear personajes desde cero, lo que lo convierte en un arte muy valorado entre los creadores y coleccionistas.</p>
+            <article class="producto">
+                <img src="Imagen de WhatsApp 2025-02-14 a las 13.45.13_592c8fbe.jpg" alt="Amigurumi 2">
+                <h3>Amigurumi Hongo Rosa</h3>
+                <p>Un adorable honguito tejido a crochet. Color Rosado</p>
+                <p class="precio">$3500</p>
+                <button class="btn-comprar">Comprar</button>
             </article>
 
-            <article>
-                <h3>El Proceso de Creación de un Amigurumi</h3>
-                <p>El proceso para crear un amigurumi comienza con la elección del patrón y los materiales. Se selecciona el hilo adecuado y se utiliza un ganchillo (crochet) para tejer cada parte del muñeco, como la cabeza, cuerpo, brazos, piernas y detalles como los ojos y la ropa. Cada pieza se une cuidadosamente, y los detalles adicionales, como bordar el rostro, se agregan al final. A medida que se va ensamblando, el amigurumi va tomando forma, y se pueden agregar detalles únicos según la creatividad del creador.</p>
+            <article class="producto">
+                <img src="Imagen de WhatsApp 2025-02-26 a las 15.12.21_0b53b9ba.jpg" alt="Amigurumi 3">
+                <h3>Amigurumi Capibara</h3>
+                <p>Un tierno Capibara amigurumi con mochilita.</p>
+                <p class="precio">$3200</p>
+                <button class="btn-comprar">Comprar</button>
             </article>
 
-            <article>
-                <h3>Tendencias en Amigurumis para Este Año</h3>
-                <p>Los amigurumis han evolucionado mucho a lo largo de los años, y cada temporada trae nuevas tendencias. Desde personajes populares de la cultura pop hasta animales, plantas, y seres fantásticos. Este año, se están destacando los amigurumis de estilo minimalista, aquellos que incorporan técnicas de "amigurumi kawaii" (estilo tierno) y los que incluyen accesorios personalizados como ropa, sombreros y más. Además, las personas están creando amigurumis inspirados en la naturaleza, como plantas y animales exóticos.</p>
+            <article class="producto">
+                <img src="Imagen de WhatsApp 2025-02-26 a las 15.12.21_8054bda2.jpg" alt="Amigurumi 4">
+                <h3>Amigurumi Hongo Azul</h3>
+                <p>Un Honguito tejido con mucho amor y detalles únicos.</p>
+                <p class="precio">$3300</p>
+                <button class="btn-comprar">Comprar</button>
             </article>
 
-            <article>
-                <h3>Los Mejores Materiales para Tejer Amigurumis</h3>
-                <p>El tipo de hilo y los materiales que utilices son esenciales para que tus amigurumis luzcan increíbles. El hilo más comúnmente utilizado es el hilo de algodón, ya que tiene una textura firme y duradera, ideal para los pequeños detalles. Es recomendable usar un ganchillo que se ajuste al grosor del hilo para lograr una tensión adecuada. Además, para los detalles como los ojos y la nariz, puedes utilizar cuentas o pequeños botones, y para el relleno, lo más común es el algodón sintético o el material conocido como “fibra de relleno”.</p>
+            <article class="producto">
+                <img src="Imagen de WhatsApp 2025-02-26 a las 15.12.22_2d512842.jpg" alt="Amigurumi 5">
+                <h3>Amigurumi Pingüino</h3>
+                <p>Este Pingüino amigurumi es perfecto como juguete para bebés.</p>
+                <p class="precio">$2800</p>
+                <button class="btn-comprar">Comprar</button>
             </article>
 
-            <article>
-                <h3>Cómo Personalizar tus Amigurumis</h3>
-                <p>Una de las mayores ventajas de tejer amigurumis es que puedes personalizarlos completamente. Desde el color del hilo hasta los detalles del rostro, puedes crear muñecos que cuenten una historia única. Personalizar tus amigurumis también te permite hacer que se ajusten a la personalidad del destinatario si lo estás haciendo como regalo. Puedes agregar accesorios como gorros, bufandas, o incluso zapatos, para darles un toque aún más único. Además, puedes jugar con diferentes tipos de hilos y combinar colores para darle un estilo original.</p>
-            </article>
-
-            <article>
-                <h3>¿Cómo Comenzar a Tejer Amigurumis?</h3>
-                <p>Si eres nuevo en el mundo del crochet, empezar a tejer amigurumis puede parecer un desafío. Sin embargo, con algo de práctica y paciencia, puedes crear hermosos muñecos. Lo primero que necesitas es aprender los puntos básicos del crochet: el punto bajo (que es el principal en amigurumis), el aumento y la disminución. Además, es importante elegir un patrón sencillo al principio, y a medida que vayas avanzando, puedes probar patrones más complejos. ¡La clave está en practicar y disfrutar del proceso!</p>
-            </article>
-
-            <article>
-                <h3>Ideas para Regalar Amigurumis</h3>
-                <p>Los amigurumis son regalos únicos y personales que pueden alegrar a cualquiera. Si quieres hacer un regalo especial, puedes crear amigurumis basados en las preferencias de la persona: un animal favorito, un personaje querido o incluso una réplica de algo significativo. Además, puedes acompañar tu amigurumi con una tarjeta hecha a mano o incluirlo como parte de un set de regalo. ¡Seguro que a quien lo reciba le encantará!</p>
+            <article class="producto">
+                <img src="Imagen de WhatsApp 2025-02-26 a las 15.12.22_6a8a6950.jpg" alt="Amigurumi 6">
+                <h3>Amigurumi Sapo</h3>
+                <p>Un simpático Sapito tejido con hilo suave y detalles bordados.</p>
+                <p class="precio">$4000</p>
+                <button class="btn-comprar">Comprar</button>
             </article>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2025 Creaciones Colours Moon. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
 
